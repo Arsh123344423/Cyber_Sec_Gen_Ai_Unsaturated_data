@@ -1,0 +1,100 @@
+/* ChatBox.css */
+.chatBox {
+    padding: 20px;
+    border: 2px solid #550F08; /* Dark Red Border */
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent for blurred effect */
+    backdrop-filter: blur(8px); /* Blurry glass effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); /* Add shadow for depth */
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.chatBox h2 {
+    margin-bottom: 20px;
+    color: #1C0315; /* Deep Blue Text Color */
+    text-align: center;
+}
+
+.chatContainer {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px; /* To accommodate the scroll bar */
+}
+
+.chatContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatContainer::-webkit-scrollbar-thumb {
+    background-color: #550F08; /* Dark Red for scroll bar */
+    border-radius: 10px;
+}
+
+.chatBubble {
+    display: inline-block;
+    max-width: 80%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgba(205, 108, 23, 0.9); /* Burnt Orange bubble background */
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.2s ease;
+}
+
+.chatBubble:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.chatBubble p {
+    margin: 0;
+}
+
+.chatBubble.received {
+    background-color: rgba(10, 50, 89, 0.8); /* Deep Blue for received messages */
+    color: #ffffff;
+    margin-left: 0;
+    margin-right: auto; /* Align received bubbles to the left */
+}
+
+.chatBubble.sent {
+    background-color: rgba(205, 108, 23, 0.9); /* Burnt Orange for sent messages */
+    color: #ffffff;
+    margin-left: auto; /* Align sent bubbles to the right */
+    margin-right: 0;
+}
+
+.typingIndicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    background-color: #550F08; /* Dark Red typing dots */
+    border-radius: 50%;
+    animation: blink 1.2s infinite both;
+}
+
+.typingIndicator:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typingIndicator:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}

@@ -1,0 +1,54 @@
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* QuestionInput.css */
+.questionInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.questionInput input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #550F08; /* Dark Red Border */
+    border-radius: 8px;
+    background-color: #1C0315; /* Deep Purple Background */
+    color: #CD6C17; /* Burnt Orange Text Color */
+    font-size: 16px;
+}
+
+.questionInput input::placeholder {
+    color: #CD6C17; /* Burnt Orange Placeholder Text */
+}
+
+.questionInput input:focus {
+    border-color: #CD6C17; /* Highlight border on focus */
+}
+
+.questionInput button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #CD6C17, #550F08); /* Gradient for realistic depth */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove border */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth button effects */
+}
+
+.questionInput button:hover {
+    transform: translateY(-2px); /* Slight "lift" on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.questionInput button:active {
+    transform: translateY(1px); /* Slight depression on click */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Lighter shadow on click */
+}

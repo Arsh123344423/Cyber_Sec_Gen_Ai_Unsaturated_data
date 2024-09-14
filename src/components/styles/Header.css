@@ -1,0 +1,26 @@
+/* Header.css */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1C0315; /* Deep Blue Background */
+    color: #CD6C17; /* Burnt Orange Text */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: backdrop-filter 0.3s ease, opacity 0.3s ease; 
+}
+
+.header.scrollBlur {
+    backdrop-filter: blur(6px); /* Apply blur when scrolling */
+    opacity: 0.8; /* Reduce opacity slightly */
+}
+
+.mainContent {
+    margin-top: 80px; /* Space for the fixed header */
+    padding: 20px;
+}
