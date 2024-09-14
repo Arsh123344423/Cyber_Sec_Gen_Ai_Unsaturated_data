@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Cyber_Sec_Gen_Ai_Unsaturated_data/static/css/main.92694bfb.css",
+    "main.js": "/Cyber_Sec_Gen_Ai_Unsaturated_data/static/js/main.560d58b8.js",
+    "static/media/back_gd.jpg": "/Cyber_Sec_Gen_Ai_Unsaturated_data/static/media/back_gd.5d90fdf59ab74bb5b2e8.jpg",
+    "index.html": "/Cyber_Sec_Gen_Ai_Unsaturated_data/index.html",
+    "main.92694bfb.css.map": "/Cyber_Sec_Gen_Ai_Unsaturated_data/static/css/main.92694bfb.css.map",
+    "main.560d58b8.js.map": "/Cyber_Sec_Gen_Ai_Unsaturated_data/static/js/main.560d58b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92694bfb.css",
+    "static/js/main.560d58b8.js"
+  ]
+}
